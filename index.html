@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Hackers Invadem Sistemas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="hero">
+        <h1>Como Hackers Invadem Sistemas</h1>
+        <h3>Sistemas não são invencíveis.<br> A diferença entre proteção e invasão é o quanto você conhece as brechas.</h3>
+    </header>
+
+    <!-- ===== SEÇÃO 1 - INÍCIO ===== -->
+    <section id="inicio">
+        <h2>Bem-vindo!</h2>
+        <p>Este site foi criado para ensinar, de forma simples, sobre ataques cibernéticos e como proteger sistemas. Aqui você encontrará informações sobre métodos de invasão, ferramentas usadas por hackers, formas de proteção e casos reais de ataques famosos, como o vazamento de dados da Equifax em 2017, que afetou milhões de pessoas. O objetivo é conscientizar sobre a importância da segurança digital. Conheça os ataques mais usados e aprenda como se proteger</p>
+    </section>
+
+    <!-- ===== SEÇÃO 2 - MÉTODOS DE INVASÃO ===== -->
+    <section id="metodos">
+        <h2>Métodos de Invasão</h2>
+
+        <div class="carousel">
+            <button class="btn prev">&#10094;</button>
+
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Cada card representa um método -->
+                    <div class="carousel-card">
+                        <img src="img/scanning.png" alt="Scanning">
+                        <div class="card-content">
+                            <h3>Scanning</h3>
+                            <p>Identifica portas e serviços ativos.</p>
+                            <p><strong>Exemplo:</strong> Um atacante usa uma ferramenta para verificar quais portas de um servidor estão abertas e descobre que um serviço desatualizado está ativo.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/sql.jpg" alt="SQL Injection">
+                        <div class="card-content">
+                            <h3>SQL Injection</h3>
+                            <p>Explora falhas no banco de dados.</p>
+                            <p><strong>Exemplo:</strong> Um site de login não valida corretamente os dados. O atacante insere um comando no campo de senha e consegue acessar o banco de dados.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/xss.jpg" alt="XSS">
+                        <div class="card-content">
+                            <h3>XSS</h3>
+                            <p>Insere scripts maliciosos.</p>
+                            <p><strong>Exemplo:</strong> JavaScript oculto. Um campo de comentários aceita código. O atacante insere um script que rouba o cookie de quem visualiza a página.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/engenharia.png" alt="Engenharia Social">
+                        <div class="card-content">
+                            <h3>Engenharia Social</h3>
+                            <p>Engana usuários para obter informações.</p>
+                            <p><strong>Exemplo:</strong> Alguém finge ser do suporte de TI e convence um funcionário a informar sua senha por telefone ou um email falso.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/forca.png" alt="Força Bruta">
+                        <div class="card-content">
+                            <h3>Força Bruta</h3>
+                            <p>Tenta várias senhas até encontrar a correta.</p>
+                            <p><strong>Exemplo:</strong> Ataque a login. Um programa tenta milhares de senhas automaticamente até acertar a senha de um usuário fraco, como “123456”.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/phishing.jpg" alt="Phishing">
+                        <div class="card-content">
+                            <h3>Phishing</h3>
+                            <p>Engana usuários com páginas falsas.</p>
+                            <p><strong>Exemplo:</strong> A vítima recebe um e-mail falso do “banco”, clica no link e digita seus dados em um site falso.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/ransomware.jpg" alt="Ransomware">
+                        <div class="card-content">
+                            <h3>Ransomware</h3>
+                            <p>Bloqueia arquivos e cobra resgate.</p>
+                            <p><strong>Exemplo:</strong> Criptografia de arquivos. Um usuário abre um anexo suspeito no e-mail e seus arquivos são criptografados, com uma mensagem exigindo pagamento.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/api.jpg" alt="Ataques a APIs">
+                        <div class="card-content">
+                            <h3>Ataques a APIs</h3>
+                            <p>Explora falhas em APIs.</p>
+                            <p><strong>Exemplo:</strong> Dados expostos. Uma API não exige autenticação adequada, permitindo que qualquer pessoa consulte dados de usuários.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/cve.png" alt="Vulnerabilidades CVE">
+                        <div class="card-content">
+                            <h3>Vulnerabilidades CVE</h3>
+                            <p>Explora falhas conhecidas listadas em CVE.</p>
+                            <p><strong>Exemplo:</strong> Software desatualizado. Um sistema usa um software antigo com uma falha conhecida, que permite execução remota de comandos.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card">
+                        <img src="img/exploit.png" alt="Exploits Automatizados">
+                        <div class="card-content">
+                            <h3>Exploits Automatizados</h3>
+                            <p>Ferramentas automatizam ataques conhecidos.</p>
+                            <p><strong>Exemplo:</strong> Um atacante usa uma ferramenta que varre a internet e explora automaticamente servidores vulneráveis.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="btn next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 3 - FERRAMENTAS ===== -->
+    <section id="ferramentas">
+        <h2>Ferramentas Usadas por Hackers</h2>
+        <div class="cards-ferramentas">
+            <div class="card">
+                <h3>Nmap</h3>
+                <p><strong>Para que serve:</strong> Ferramenta usada para identificar portas abertas, serviços ativos e sistemas em uma rede.</p>
+                <p><strong>Ajuda no ataque:</strong> Permite descobrir quais serviços estão disponíveis e quais podem estar vulneráveis.</p>
+                <p><strong>Medidas de defesa:</strong></p>
+                <ul>
+                    <li>Firewall bem configurado</li>
+                    <li>Fechar portas desnecessárias</li>
+                    <li>Monitorar tentativas de varredura</li>
+                </ul>
+
+            </div>
+            <div class="card">
+                <h3>Burp Suite</h3>
+                <p><strong>Para que serve:</strong> Ferramenta para analisar e testar a segurança de aplicações web.</p>
+                <p><strong>Ajuda no ataque:</strong> Ajuda a identificar falhas como formulários inseguros e erros de autenticação.</p>
+                <p><strong>Medidas de defesa:</strong></p>
+                <ul>
+                    <li>Validação correta de dados</li>
+                    <li>Uso de HTTPS</li>
+                    <li>Testes regulares de segurança no site</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Metasploit</h3>
+                <p><strong>Para que serve:</strong> Plataforma usada para testar e explorar vulnerabilidades conhecidas em sistemas.</p>
+                <p><strong>Ajuda no ataque:</strong> Facilita a exploração de falhas já documentadas em softwares desatualizados.</p>
+                <p><strong>Medidas de defesa:</strong></p>
+                <ul>
+                    <li>Atualizar sistemas regularmente</li>
+                    <li>Aplicar patches de segurança</li>
+                    <li>Usar antivírus e IDS/IPS</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Kali Linux</h3>
+                <p><strong>Para que serve:</strong> Sistema operacional com diversas ferramentas de testes de segurança.</p>
+                <p><strong>Ajuda no ataque:</strong> Reúne várias ferramentas que facilitam testes e ataques se usado de forma maliciosa.</p>
+                <p><strong>Medidas de defesa:</strong></p>
+                <ul>
+                    <li>Controle de acesso à rede</li>
+                    <li>Monitoramento de atividades suspeitas</li>
+                    <li>Políticas de segurança bem definidas</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Wireshark</h3>
+                <p><strong>Para que serve:</strong> Ferramenta para capturar e analisar dados trafegando na rede.</p>
+                <p><strong>Ajuda no ataque:</strong>Pode ser usada para interceptar informações sensíveis em redes inseguras.</p>
+                <p><strong>Medidas de defesa:</strong></p>
+                <ul>
+                    <li>Criptografia de dados (HTTPS, VPN)</li>
+                    <li>Redes Wi-Fi seguras</li>
+                    <li>Segmentação de rede</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Hydra</h3>
+                <p><strong>Para que serve:</strong> Ferramenta para testar senhas em diversos serviço.</p>
+                <p><strong>Ajuda no ataque:</strong> Automatiza tentativas de login até encontrar senhas fracas.</p>
+                <p><strong>Medidas de defesa:</strong></p>
+                <ul>
+                    <li>Senhas fortes</li>
+                    <li>Bloqueio após tentativas falhas</li>
+                    <li>Autenticação em dois fatores (2FA)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO 4 - COMO PROTEGER ===== -->
+    <section id="casos">
+        <h2>Como Proteger um Sistema</h2>
+        <div class="card caso">
+        <ul>
+            <li><strong>Aplicar updates:</strong> Manter sistemas e softwares atualizados é essencial para a segurança.<br>As atualizações corrigem falhas que podem ser exploradas por atacantes e melhoram a proteção geral do sistema.</li><br>
+            <li><strong>MFA:</strong> A autenticação de dois fatores adiciona uma camada extra de segurança ao login.<br>Mesmo que a senha seja descoberta, o invasor não conseguirá acessar sem o segundo fator de verificação.</li><br>
+            <li><strong>Firewalls:</strong> Firewalls controlam o tráfego de entrada e saída da rede.<br>Eles ajudam a bloquear acessos não autorizados e ataques vindos da internet.</li><br>
+            <li><strong>Senhas fortes:</strong> Senhas fortes dificultam ataques de força bruta e acessos indevidos.<br>O ideal é usar uma combinação de letras maiúsculas, minúsculas, números e símbolos.</li><br>
+            <li><strong>Criptografia:</strong> A criptografia protege dados sensíveis ao transformá-los em informações ilegíveis. <br>Assim, mesmo que os dados sejam roubados, não poderão ser utilizados facilmente.</li><br>
+            <li><strong>Limitar portas abertas:</strong> Manter apenas as portas necessárias abertas reduz os pontos de entrada para ataques.<br>Quanto menos portas expostas, menor é a superfície de ataque do sistema.</li><br>
+            <li><strong>Validações no back-end:</strong> As validações no back-end garantem que apenas dados válidos sejam processados pelo sistema.<br>Isso evita a inserção de códigos maliciosos e falhas de segurança.</li><br>
+            <li><strong>Uso de Prepared Statements:</strong> Prepared Statements ajudam a proteger o banco de dados contra SQL Injection.<br>Eles separam os dados dos comandos, impedindo que código malicioso seja executado.</li><br>
+            <li><strong>Backup frequente:</strong> Backups frequentes garantem a recuperação dos dados em caso de falhas ou ataques.<br>Eles são fundamentais em situações como ransomware ou perda de informações.</li><br>
+            <li><strong>Políticas de acesso:</strong> As políticas de acesso definem o que cada usuário pode ou não fazer no sistema.<br>Isso reduz riscos, pois limita o acesso apenas ao necessário para cada função.</li><br>
+        </ul>
+    </section>
+
+    <!-- ===== SEÇÃO 5 - CASOS REAIS ===== -->
+    <section id="casos">
+        <h2>Casos Reais de Ataques Famosos</h2>
+
+        <div class="card caso">
+            <h3>Vazamento da Equifax (2017)</h3>
+            <p><strong>O que aconteceu:</strong> Em 2017, a Equifax, uma das maiores empresas de crédito dos Estados Unidos, sofreu um ataque cibernético que resultou no vazamento de dados pessoais de milhões de pessoas.</p>
+            <p><strong>Vulnerabilidade explorada:</strong> Os atacantes exploraram uma falha de segurança em um software web desatualizado (Apache Struts), que já possuía uma vulnerabilidade conhecida.</p>
+            <p><strong>Impacto:</strong> Foram expostos dados sensíveis como nomes, números de documentos, datas de nascimento e endereços. O ataque causou grande prejuízo financeiro e perda de confiança na empresa.</p>
+            <p><strong>Como poderia ter sido evitado:</strong> O ataque poderia ter sido evitado com atualizações de segurança em dia, melhor monitoramento dos sistemas e práticas adequadas de proteção de dados.</p>
+        </div>
+    </section>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <p>Segurança da Informação<br>
+        Arthur Alves e Karen Bastos</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+.hero {
+    background-image: url("img/exploits-starti-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: overlay;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #0a1a2f;
+}
+
+/* ===== CARROSSEL ===== */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card {
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+    background: white;
+    border-radius: 12px;
+    margin: 0 5px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+    background: #0a1a2f;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ===== FERRAMENTAS ===== */
+.cards-ferramentas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== CASOS ===== */
+.card.caso {
+    background: white;
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background: #0e0014;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+    .carousel-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+}
